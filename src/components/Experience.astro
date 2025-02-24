@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Programador web",
+    company: "Freelance",
+    description:
+      "Con 5 años de experiencia como freelance, me especializo en crear aplicaciones web modernas, escalables y optimizadas para SEO utilizando Next.js, React.js y Tailwind CSS. Mi enfoque se centra en entregar soluciones técnicas robustas, interfaces atractivas y experiencias de usuario excepcionales. Trabajo colaborativamente con clientes y equipos para transformar ideas en productos funcionales, asegurando código limpio, eficiente y alineado con los objetivos del negocio.",
+    //link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Septiembre 2020",
+    title: "Principal Junior Developer Fullstack",
+    company: "Nexen PE",
+    description:
+      "desempeño en el área de desarrollo de software bajo el lenguaje de programación c# (C Sharp) y su framework .NET, aplicaciones en Asp.net bajo el patrón de diseño MVC en cuatro capas, haciendo uso de la librería de JavaScript JQUERY para trabajo asíncrono, HTML5 y CSS3 haciendo uso de bootstrap para plantillas en frontend, control de cambios con git en la plataforma bitbucket, base de datos MySQL y SQL SERVER.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
