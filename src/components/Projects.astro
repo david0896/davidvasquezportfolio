@@ -2,6 +2,7 @@
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Wordpress from "./icons/Wordpress.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -15,6 +16,11 @@ const TAGS = {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
+  },
+  WORDPRESS: {
+    name: "Wordpress",
+    class: "bg-[#003159] text-white",
+    icon: Wordpress,
   },
 }
 const PROJECTS = [
@@ -34,6 +40,22 @@ const PROJECTS = [
     link: "https://casterteam.netlify.app/",
     image: "https://i.postimg.cc/NMg0YrQh/adventjs2.png",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Grupo Oseo - Clinica",
+    description:
+      "Grupo OSEO es un centro médico ubicado en Caracas, Venezuela, que ofrece servicios integrales de salud, incluyendo atención primaria, consultas especializadas, estudios de imagenología avanzada (como resonancias, tomografías y rayos X), y análisis de laboratorio clínico. Con un enfoque centrado en el bienestar del paciente, combina tecnología de vanguardia y atención personalizada para brindar diagnósticos precisos y tratamientos efectivos. También promueven hábitos saludables a través de contenido educativo y orientación médica.",
+    link: "https://grupo-oseo.com/",
+    image: "https://i.postimg.cc/3RCRjqdk/grupo-Oseo.jpg",
+    tags: [TAGS.WORDPRESS],
+  },
+  {
+    title: "Colortrade - Alquiler y venta de impresoras",
+    description:
+      "ColorTrade es una empresa ubicada en Venezuela, especializada en la comercialización y alquiler de impresoras multifuncionales, actuando como distribuidor autorizado de Canon para el país. Su enfoque principal es brindar soluciones tecnológicas integrales para oficinas y empresas, que incluyen servicios de impresión, escaneo, automatización de flujos de trabajo y protección de datos.",
+    link: "https://colortrade.com",
+    image: "https://i.postimg.cc/25WRffxt/colortrade.jpg",
+    tags: [TAGS.WORDPRESS],
   },
 ]
 ---
